@@ -1,0 +1,14 @@
+* {
+  box-sizing: border-box;
+}
+
+.bg-pizza {
+  background-image: url(../images/backgroundpizza.jpg);
+  height: 800px;
+  width: auto;
+}
+
+.big-pizza {
+  background-image: url(../images/bigpizza.jpg);
+  height: 500px;
+}
