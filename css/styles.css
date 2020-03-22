@@ -6,9 +6,36 @@
   background-image: url(../images/backgroundpizza.jpg);
   height: 800px;
   width: auto;
+  margin-bottom: 50px;
 }
 
 .big-pizza {
   background-image: url(../images/bigpizza.jpg);
   height: 500px;
+}
+
+.dessert {
+  background-image: url(../images/desserts.png);
+}
+
+.post-card {
+  background-color: white;
+  padding: 20px;
+  padding-top: 40px;
+  max-width: 700px;
+  width: 100%;
+  margin: auto;
+  border-radius: 10px;
+  margin-bottom: 50px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.but {
+  background-color: white;
+  border-radius: 20px;
+  border-color: black;
+}
+.but:hover {
+  background-color: black;
+  color: white;
 }
