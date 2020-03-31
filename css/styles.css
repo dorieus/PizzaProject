@@ -64,4 +64,16 @@
   .myimg {
     max-height: 200px;
   }
+  .basket {
+    background-color: white;
+    opacity: 1;
+    padding: 20px;
+    padding-top: 20px;
+    max-width: 200px;
+    max-height: 500px;
+    border-radius: 10px;
+    margin-bottom: 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    position: fixed;
+  }
 }
