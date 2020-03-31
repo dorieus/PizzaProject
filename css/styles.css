@@ -4,7 +4,7 @@
 
 .bg-pizza {
   background-image: url(../images/backgroundpizza.jpg);
-  height: 800px;
+  height: 700px;
   width: auto;
   margin-bottom: 50px;
 }
@@ -55,25 +55,20 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   position: fixed;
   right: 15px;
+  top: 0;
 }
 
 .scroll {
   overflow-x: hidden;
 }
+
+.karta {
+  width: 100%;
+  height: 500px;
+  margin-top: 80px; 
+}
+
 @media only screen and (max-width: 768px) {
   .myimg {
     max-height: 200px;
   }
-  .basket {
-    background-color: white;
-    opacity: 1;
-    padding: 20px;
-    padding-top: 20px;
-    max-width: 200px;
-    max-height: 500px;
-    border-radius: 10px;
-    margin-bottom: 50px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    position: fixed;
-  }
-}
