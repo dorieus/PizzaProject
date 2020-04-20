@@ -1,8 +1,5 @@
 const basket = document.querySelector(".basket");
-const btns = document.querySelector(".but");
 const totalPrice = document.querySelector(".totalPrice");
-
-const btnsArray = Array.from(btns);
 
 class Basket {
   constructor() {
@@ -55,8 +52,6 @@ document.body.addEventListener("click", (event) => {
   if (event.target.innerText === "CLICK TO ADD") {
     const basket = document.querySelector(".basket");
     basket.classList.remove("hide");
-
-    console.log("УРААА МЫ НАЖАЛИ КНОПКУ");
 
     const productName = event.target.value;
     const productEl = products.find((product) => {
