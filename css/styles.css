@@ -15,7 +15,7 @@
 
 .dessert {
   background-image: url(../images/desserts.png);
-  padding: 10px;
+  padding: 20px;
   background-attachment: fixed;
 }
 
@@ -33,6 +33,16 @@
   margin: auto;
   border-radius: 10px;
   margin-bottom: 50px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.menu {
+  background-color: white;
+  padding: 20px;
+  max-width: 300px;
+  width: 100%;
+  margin: auto;
+  border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
@@ -146,7 +156,7 @@
   visibility: hidden;
 }
 
-img.bask {
+img.rot {
   animation: 1s linear 0s normal none infinite running rot;
   -webkit-animation: 10s linear 0s normal none infinite running rot;
   width: 40px;
