@@ -1,5 +1,5 @@
 const basket = document.querySelector(".basket");
-const btns = document.querySelectorAll(".but");
+const btns = document.querySelector(".but");
 const totalPrice = document.querySelector(".totalPrice");
 
 const btnsArray = Array.from(btns);
@@ -8,6 +8,16 @@ class Basket {
   constructor() {
     this.products = [];
     this.totalPrice = 0;
+  }
+  getTotalPrice() {
+    let total = 0;
+
+    for (let i = 0; i < this.products.length; i++) {
+      console.log(total);
+      total += this.products[i].price;
+    }
+
+    return total;
   }
 }
 class Product {
@@ -41,11 +51,14 @@ const products = [
   pancakes,
 ];
 
-btnsArray.forEach((button) => {
-  button.addEventListener("click", (event) => {
-    const productName = Array.from(event.target.classList).filter(
-      (className) => className !== "but"
-    )[0];
+document.body.addEventListener("click", (event) => {
+  if (event.target.innerText === "CLICK TO ADD") {
+    const basket = document.querySelector(".basket");
+    basket.classList.remove("hide");
+
+    console.log("УРААА МЫ НАЖАЛИ КНОПКУ");
+
+    const productName = event.target.value;
     const productEl = products.find((product) => {
       return product.name === productName;
     });
@@ -62,6 +75,9 @@ btnsArray.forEach((button) => {
     pPrice.innerText = productEl.price + "UAH";
     pPrice.className = "text-center";
     delBtn.className = "del-item";
+
+    delBtn.value = productEl.name;
+
     div.className = "delete-box";
     row.className = "row";
     img.src = productEl.image;
@@ -70,8 +86,8 @@ btnsArray.forEach((button) => {
     img.style.height = "40px";
 
     tortilla.products.push(productEl);
-    tortilla.totalPrice += productEl.price;
-    totalPrice.innerText = "Total: " + tortilla.totalPrice + "UAH";
+
+    totalPrice.innerText = "Total: " + tortilla.getTotalPrice() + "UAH";
     console.log(tortilla);
 
     row.appendChild(img);
@@ -81,24 +97,23 @@ btnsArray.forEach((button) => {
     row.appendChild(delBtn);
 
     basket.insertBefore(div, totalPrice);
-  });
-});
-const bask = document.querySelector(".basket");
-const close = document.querySelector(".close");
-bask.addEventListener("onclick", () => {
-  bask.classList.add("show");
-  bask.classList.remove("hide");
-});
-close.addEventListener("click", () => {
-  bask.classList.add("hide");
-  bask.classList.remove("show");
+  }
+
+  if (event.target.className === "del-item") {
+    let elementDel = 0;
+    for (let i = 0; i < tortilla.products.length; i++) {
+      if (tortilla.products[i].name === event.target.value) elementDel = i;
+    }
+
+    tortilla.products.splice(elementDel, 1);
+    totalPrice.innerText = "Total: " + tortilla.getTotalPrice() + "UAH";
+
+    event.target.parentElement.parentElement.remove();
+  }
 });
 
-/*document.onclick = function () {
-  delItem = Array.from(document.querySelector(".delete-box"));
-  delItem.forEach((e) => {
-    e.onclick = function () {
-      this.remove();
-    };
-  });
-}; */
+const close = document.querySelector(".close");
+
+close.addEventListener("click", () => {
+  close.parentElement.parentElement.classList.add("hide");
+});

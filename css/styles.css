@@ -146,10 +146,6 @@
   visibility: hidden;
 }
 
-.delete-box {
-  background: none;
-}
-
 @media only screen and (max-width: 768px) {
   .myimg {
     max-height: 200px;
