@@ -5,12 +5,13 @@
 .bg-pizza {
   background-image: url(../images/backgroundpizza.jpg);
   height: 700px;
-  width: auto;
+  background-size: 100%;
 }
 
 .big-pizza {
   background-image: url(../images/bigpizza.jpg);
   height: 500px;
+  background-size: 100%;
 }
 
 .dessert {
