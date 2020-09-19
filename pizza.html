@@ -5,41 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
-    <link
+    <!-- <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
-    />
+    /> -->
 
     <title>TortillaPizza</title>
   </head>
-  <body class="scroll">
+  <body link: white class="scroll">
     <!--Navigation field-->
 
-    <header class="bg-dark shadow-lg rounded text-light mb-4">
-      <nav class="navbar">
-        <img src="images/little-pz.png" alt="logo" height="35" />
-        <ul class="container-fluid col-5 list-unstyled">
-          <li><a class="text-white" href="welcome.html">Welcome</a></li>
-          <li>
-            <a class="text-white" href="pizza.html">Pizza</a>
-          </li>
-          <li>
-            <a class="text-white" href="desserts.html">Desserts</a>
-          </li>
-          <li>
-            <a class="text-white" href="contact.html">Contact</a>
-          </li>
-        </ul>
+    <header>
+      <nav class="mobile-menu">
+        <input type="checkbox" id="checkbox" class="mobile-menu__checkbox" />
+        <label for="checkbox" class="mobile-menu__btn"
+          ><div class="mobile-menu__icon"></div
+        ></label>
+        <img class="item" src="images/little-pz.png" alt="logo" height="35" />
+        <div class="mobile-menu__container">
+          <ul class="mobile-menu__list">
+            <li class="mobile-menu__item">
+              <a href="welcome.html">Welcome</a>
+            </li>
+            <li class="mobile-menu__item li-unstyle">
+              <a href="pizza.html">Pizza</a>
+            </li>
+            <li class="mobile-menu__item li-unstyle">
+              <a href="desserts.html">Desserts</a>
+            </li>
+            <li class="mobile-menu__item li-unstyle">
+              <a href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
         <div>
-          <button class="btn btn-link">
+          <button class="btn">
             <img src="images/twitter.png" alt="twitter" height="35" />
           </button>
-          <button class="btn btn-link">
+          <button class="btn">
             <img src="images/fb.png" alt="facebook" height="35" />
           </button>
-          <button class="btn btn-link">
+          <button class="btn">
             <img src="images/instagram.png" alt="instagram" height="35" />
           </button>
         </div>
@@ -49,21 +57,21 @@
     <!--Basket-->
 
     <div class="basket container-fluid">
-      <div class="pl-2 mb-3 row">
-        <img class="mr-2 rot" src="images/basket.png" />
-        <h4>Basket</h4>
-        <button class="close mt-2"></button>
+      <div class="new-bask">
+        <img class="rot" src="images/basket.png" />
+        <h4 class="text-center">Basket</h4>
+        <button class="close"></button>
       </div>
       <h6 class="text-center totalPrice"></h6>
     </div>
 
     <!--Pizza Menu-->
 
-    <div id="pizza" class="text-center mb-4 mobile menu">
-      <h2>Pizza Menu</h2>
+    <div id="pizza" class="pizza-content menu">
+      <h2 class="pizza-content">Pizza Menu</h2>
     </div>
-    <div class="container-fluid mb-4">
-      <div class="row text-center">
+    <div>
+      <div class="pizza-block">
         <div>
           <img src="images/Pepperoni.jpg" alt="Pepperoni" width="500" />
           <h3>Pepperoni</h3>
@@ -83,7 +91,7 @@
           <button class="but Carbonara" value="Carbonara">CLICK TO ADD</button>
         </div>
       </div>
-      <div class="row text-center">
+      <div class="pizza-block">
         <div>
           <img src="images/tuna.jpg" alt="Tuna" width="500" />
           <h3>Tuna</h3>
@@ -107,12 +115,12 @@
 
     <!--Footer-->
 
-    <footer class="navbar bg-dark shadow-lg rounded text-light">
-      <ul class="container-fluid col-5 list-unstyled">
-        <li><a class="text-white" href="Gallery.html">Gallery</a></li>
-        <li><a class="text-white" href="Culture.html">Culture</a></li>
-        <li><a class="text-white" href="Catering.html">Catering</a></li>
-        <li><a class="text-white" href="Visitus.html">Visit us</a></li>
+    <footer>
+      <ul class="footer-style">
+        <li><a href="Gallery.html">Gallery</a></li>
+        <li><a href="Culture.html">Culture</a></li>
+        <li><a href="Catering.html">Catering</a></li>
+        <li><a href="Visitus.html">Visit us</a></li>
       </ul>
     </footer>
     <script type="text/javascript" src="index.js"></script>

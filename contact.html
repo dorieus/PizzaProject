@@ -5,102 +5,108 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
-    <link
+    <!-- <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
-    />
+    /> -->
 
     <title>TortillaPizza</title>
   </head>
   <body class="scroll">
     <!--Navigation field-->
 
-    <header class="bg-dark mb-4 shadow-lg rounded text-light">
-      <nav class="navbar">
-        <img src="images/little-pz.png" alt="logo" height="35" />
-        <ul class="container-fluid col-5 list-unstyled">
-          <li><a class="text-white" href="welcome.html">Welcome</a></li>
-          <li>
-            <a class="text-white" href="pizza.html">Pizza</a>
-          </li>
-          <li>
-            <a class="text-white" href="desserts.html">Desserts</a>
-          </li>
-          <li>
-            <a class="text-white" href="contact.html">Contact</a>
-          </li>
-        </ul>
+    <header>
+      <nav class="mobile-menu">
+        <input type="checkbox" id="checkbox" class="mobile-menu__checkbox" />
+        <label for="checkbox" class="mobile-menu__btn"
+          ><div class="mobile-menu__icon"></div
+        ></label>
+        <img class="item" src="images/little-pz.png" alt="logo" height="35" />
+        <div class="mobile-menu__container">
+          <ul class="mobile-menu__list">
+            <li class="mobile-menu__item">
+              <a href="welcome.html">Welcome</a>
+            </li>
+            <li class="mobile-menu__item li-unstyle">
+              <a href="pizza.html">Pizza</a>
+            </li>
+            <li class="mobile-menu__item li-unstyle">
+              <a href="desserts.html">Desserts</a>
+            </li>
+            <li class="mobile-menu__item li-unstyle">
+              <a href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
         <div>
-          <button class="btn btn-link">
+          <button class="btn">
             <img src="images/twitter.png" alt="twitter" height="35" />
           </button>
-          <button class="btn btn-link">
+          <button class="btn">
             <img src="images/fb.png" alt="facebook" height="35" />
           </button>
-          <button class="btn btn-link">
+          <button class="btn">
             <img src="images/instagram.png" alt="instagram" height="35" />
           </button>
         </div>
       </nav>
     </header>
 
-    <div class="text-center">
-      <h1 class="mb-4">
-        Delivery in Kyiv
-      </h1>
+    <div class="contact-content">
+      <h1>Delivery in Kyiv</h1>
       <p>
         Specify delivery details with the operator. You can order pizza in any
         way convenient for you: by phone or online. You can pay in cash to the
         courier in national currency.
       </p>
     </div>
-    <div class="text-center">
-      <ul class="list-unstyled">
-        <li class="font-weight-bold">Contacts</li>
+    <div>
+      <ul class="contact-content">
+        <li>Contacts</li>
         <li>
-          <a class="text-dark" href="tel:+38 (044) 000 00 00"
+          <a class="contact-content" href="tel:+38 (044) 000 00 00"
             >+38 (044) 000 00 00</a
           >
         </li>
         <li>
-          <a class="text-dark" href="tel:+38 (067) 000 00 00"
+          <a class="contact-content" href="tel:+38 (067) 000 00 00"
             >+38 (067) 000 00 00</a
           >
         </li>
         <li>
-          <a class="text-dark" href="tel:+38 (063) 000 00 00"
+          <a class="contact-content" href="tel:+38 (063) 000 00 00"
             >+38 (063) 000 00 00</a
           >
         </li>
 
         <li>
-          <a class="text-dark" href="mailto:tortillapizza@gmail.com"
+          <a class="contact-content" href="mailto:tortillapizza@gmail.com"
             >tortillapizza@gmail.com</a
           >
         </li>
       </ul>
     </div>
-    <div class="container-fluid">
+    <div>
       <iframe
         class="karta"
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d162757.72582760116!2d30.392608836420333!3d50.40217023835161!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf4ee15a4505%3A0x764931d2170146fe!2sKyiv%2C%2002000!5e0!3m2!1sen!2sua!4v1580397936247!5m2!1sen!2sua"
         width="100%"
         height="556px"
         frameborder="0"
-        style="border: 0;"
+        style="border: 0"
         allowfullscreen=""
       ></iframe>
     </div>
 
     <!--Footer-->
-    <footer class="navbar bg-dark shadow-lg rounded text-light">
-      <ul class="container-fluid col-5 list-unstyled">
-        <li><a class="text-white" href="Gallery.html">Gallery</a></li>
-        <li><a class="text-white" href="Culture.html">Culture</a></li>
-        <li><a class="text-white" href="Catering.html">Catering</a></li>
-        <li><a class="text-white" href="Visitus.html">Visit us</a></li>
+    <footer>
+      <ul class="footer-style">
+        <li><a href="Gallery.html">Gallery</a></li>
+        <li><a href="Culture.html">Culture</a></li>
+        <li><a href="Catering.html">Catering</a></li>
+        <li><a href="Visitus.html">Visit us</a></li>
       </ul>
     </footer>
   </body>

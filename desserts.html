@@ -5,41 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
-    <link
+    <!-- <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
-    />
+    /> -->
 
     <title>TortillaPizza</title>
   </head>
   <body class="scroll">
     <!--Navigation field-->
 
-    <header class="bg-dark shadow-lg rounded text-light">
-      <nav class="navbar">
-        <img src="images/little-pz.png" alt="logo" height="35" />
-        <ul class="container-fluid col-5 list-unstyled">
-          <li><a class="text-white" href="welcome.html">Welcome</a></li>
-          <li>
-            <a class="text-white" href="pizza.html">Pizza</a>
-          </li>
-          <li>
-            <a class="text-white" href="desserts.html">Desserts</a>
-          </li>
-          <li>
-            <a class="text-white" href="contact.html">Contact</a>
-          </li>
-        </ul>
+    <header>
+      <nav class="mobile-menu">
+        <input type="checkbox" id="checkbox" class="mobile-menu__checkbox" />
+        <label for="checkbox" class="mobile-menu__btn"
+          ><div class="mobile-menu__icon"></div
+        ></label>
+        <img class="item" src="images/little-pz.png" alt="logo" height="35" />
+        <div class="mobile-menu__container">
+          <ul class="mobile-menu__list">
+            <li class="mobile-menu__item">
+              <a href="welcome.html">Welcome</a>
+            </li>
+            <li class="mobile-menu__item li-unstyle">
+              <a href="pizza.html">Pizza</a>
+            </li>
+            <li class="mobile-menu__item li-unstyle">
+              <a href="desserts.html">Desserts</a>
+            </li>
+            <li class="mobile-menu__item li-unstyle">
+              <a href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
         <div>
-          <button class="btn btn-link">
+          <button class="btn">
             <img src="images/twitter.png" alt="twitter" height="35" />
           </button>
-          <button class="btn btn-link">
+          <button class="btn">
             <img src="images/fb.png" alt="facebook" height="35" />
           </button>
-          <button class="btn btn-link">
+          <button class="btn">
             <img src="images/instagram.png" alt="instagram" height="35" />
           </button>
         </div>
@@ -49,29 +57,29 @@
     <!--Basket-->
 
     <div class="basket container-fluid">
-      <div class="pl-2 mb-3 row">
-        <img class="mr-2 rot" src="images/bitdon.png" />
-        <h4>Basket</h4>
-        <button class="close mt-2"></button>
+      <div class="new-bask">
+        <img class="rot" src="images/bitdon.png" />
+        <h4 class="text-center">Basket</h4>
+        <button class="close"></button>
       </div>
       <h6 class="text-center totalPrice"></h6>
     </div>
 
     <!--Desserts-->
 
-    <div class="container-fluid text-center dessert">
-      <div id="desserts" class="text-center mb-4 menu">
+    <div class="dessert contact-content">
+      <div id="desserts" class="menu">
         <h2>Desserts Menu</h2>
       </div>
       <div>
         <div class="post-card">
           <img
-            class="container-fluid"
+            class="img-card"
             src="images/tiramisu.jpg"
             alt="Tiramisu"
             width="600"
           />
-          <h3 class="mt-2">Tiramisu</h3>
+          <h3>Tiramisu</h3>
           <p>
             Mascarpone custard layered with whipped cream and rum and coffee
             soaked ladyfingers.
@@ -80,13 +88,13 @@
         </div>
         <div class="post-card">
           <img
-            class="container-fluid myimg"
+            class="img-card"
             src="images/cheesecake.jpg"
             alt="Cheesecake"
             width="600"
             height="500"
           />
-          <h3 class="mt-2">Cheesecakes</h3>
+          <h3>Cheesecakes</h3>
           <p>Homemade cheese dumplings with sour cream and berry sauce.</p>
           <button class="but Cheesecakes" value="Cheesecakes">
             CLICK TO ADD
@@ -94,14 +102,14 @@
         </div>
         <div class="post-card">
           <img
-            class="container-fluid myimg"
+            class="img-card"
             img
             src="images/pancakes.jpg"
             alt="Pancakes"
             width="600"
             height="500"
           />
-          <h3 class="mt-2">Pancakes</h3>
+          <h3>Pancakes</h3>
           <p>Pancakes with apples and cinnamon, served with sour cream.</p>
           <button class="but Pancakes" value="Pancakes">CLICK TO ADD</button>
         </div>
@@ -110,12 +118,12 @@
 
     <!--Footer-->
 
-    <footer class="navbar bg-dark shadow-lg rounded text-light">
-      <ul class="container-fluid col-5 list-unstyled">
-        <li><a class="text-white" href="Gallery.html">Gallery</a></li>
-        <li><a class="text-white" href="Culture.html">Culture</a></li>
-        <li><a class="text-white" href="Catering.html">Catering</a></li>
-        <li><a class="text-white" href="Visitus.html">Visit us</a></li>
+    <footer>
+      <ul class="footer-style">
+        <li><a href="Gallery.html">Gallery</a></li>
+        <li><a href="Culture.html">Culture</a></li>
+        <li><a href="Catering.html">Catering</a></li>
+        <li><a href="Visitus.html">Visit us</a></li>
       </ul>
     </footer>
     <script type="text/javascript" src="index.js"></script>
