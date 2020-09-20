@@ -39,6 +39,7 @@
 
 .menu {
   display: flex;
+  justify-content: center;
   background-color: white;
   padding: 10px;
   max-width: 200px;
@@ -217,11 +218,6 @@ img.rot {
   padding: 0.375rem 0.75rem;
 }
 
-.pizza-content {
-  display: flex;
-  justify-content: center;
-}
-
 .art-pizza-content {
   text-align: right;
   color: white;
@@ -345,7 +341,16 @@ a:hover {
   }
 
   .pizza-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
     text-align: center;
+    padding-bottom: 30px;
+  }
+
+  .mobile-pizza-img {
+    width: 100%;
   }
 
   .mobile-menu {
