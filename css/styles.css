@@ -94,6 +94,13 @@
   margin-left: auto;
 }
 
+.new-bask {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
 .scroll {
   overflow-x: hidden;
 }
@@ -119,7 +126,7 @@
   padding: 0;
   background-color: transparent;
   border: 0;
-  margin-top: 5%;
+  margin-top: 10%;
 }
 
 .close:before,
@@ -185,6 +192,7 @@ img.rot {
   animation: 1s linear 0s normal none infinite running rot;
   -webkit-animation: 10s linear 0s normal none infinite running rot;
   width: 40px;
+  margin-right: 25px;
 }
 
 .mobile-menu {
