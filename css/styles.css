@@ -2,6 +2,10 @@
   box-sizing: border-box;
 }
 
+body {
+  margin: 0;
+}
+
 .bg-pizza {
   background-image: url(../images/backgroundpizza.jpg);
   height: 500px;
@@ -101,10 +105,6 @@
   margin-bottom: 20px;
 }
 
-.scroll {
-  overflow-x: hidden;
-}
-
 .karta {
   height: 500px;
   margin-top: 50px;
@@ -142,12 +142,10 @@
 }
 
 .close:before {
-  webkit-transform: rotate(45deg);
   transform: rotate(45deg);
 }
 
 .close:after {
-  webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
 
@@ -178,10 +176,6 @@
 }
 .del-item:after {
   transform: rotate(-45deg);
-}
-
-.show {
-  visibility: visible;
 }
 
 .hide {
@@ -235,6 +229,7 @@ img.rot {
 
 .pizza-block {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   text-align: center;
   padding-bottom: 30px;
@@ -244,15 +239,6 @@ img.rot {
   list-style-type: none;
   text-align: center;
   color: black;
-}
-
-.pad-bask {
-  padding-left: 0.5rem !important;
-  margin-bottom: 1rem !important;
-  flex-wrap: wrap;
-  margin-right: -15px;
-  margin-left: -15px;
-  justify-content: space-between;
 }
 
 .text-center {
@@ -273,7 +259,6 @@ img.rot {
 
 .item {
   position: absolute;
-  float: left;
   margin-left: 15px;
   margin-top: 10px;
 }
